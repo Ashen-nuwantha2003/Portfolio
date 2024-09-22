@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <title>My-portfolio</title>
-
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 <style>
+    /*------------home-----------*/
     *{
         padding: 0;
         margin: 0;
+    }
+    body{
+        overflow-x: hidden;
     }
     header{
         background: dimgray;
@@ -27,26 +35,149 @@
     }
 
     header>nav>ul>li{
+        margin-top: 10px;
         margin-right: 20px;
         color: white;
     }
-    header>nav>ul>li
-    header>#main1{
-        position: relative;
-        display: flow;
-        left: 18pc;
+
+    header>nav>ul>li:hover{
+         color: darkslategray;
+    }
+    header>#main1>div>#h1{
         font-size: 28px;
-        top: 25pc;
         color: white;
 
     }
-
-    header>#img1{
-        left: 53pc;
-        position: relative;
-        bottom: 10pc;
+    header>#main1>div>#h2{
+        left: 180px;
+        font-size: 58px;
+        color: white;
 
     }
+    header>#main1{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        /*margin-top: 500px;*/
+    }
+    header>#main1>div>#h3{
+
+        left: 230px;
+        font-size: 58px;
+        color: white;
+
+    }
+    header>#main1>div>#h4{
+        font-size: 25px;
+        color: greenyellow;
+
+    }
+
+    header>main>section>#img1{
+        margin-left: 100px;
+        width: 500px;
+        height: 600px;
+        position: relative;
+        bottom: 150px;
+        right: 130px;
+        border-radius: 100%;
+    }
+    header>main{
+        height: 100vh;
+
+    }
+    header>main>section{
+        width: 450px;
+        height: 450px;
+        border: 2px solid lightgreen;
+        border-radius: 100%;
+        margin-top: 50px;
+        margin-left: 160px;
+
+    }
+
+    #icons{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: absolute;
+        right: 60px;
+        bottom: 250px;
+    }
+
+/*--------------about------------*/
+    #main2{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #main2>#mainSec{
+        border:2px solid black
+    ;
+    }
+    .about{
+        position: relative;
+        left: 700px;
+        top: 270px;
+        font-size: 25px;
+        color: lime;
+
+    }
+    #main2>section>p{
+        font-size: 18px;
+        color: dimgray;
+        width: 500px;
+        position: relative;
+        top: 300px;
+        left: 700px;
+
+    }
+    #main2>section>#img5{
+        width: 500px;
+        height: 600px;
+        display: flex;
+        margin-left: 100px;
+        top: 0;
+        border-radius: 15px;
+    }
+
+    .l12{
+        width: 200px;
+        height: 200px;
+        font-size: 16px;
+        color: dimgray;
+        left: 800px;
+        bottom: 200px;
+        position: relative;
+    }
+
+    .l34{
+        width: 200px;
+        height: 200px;
+        font-size: 16px;
+        color: dimgray;
+        left: 1000px;
+        bottom: 400px;
+        position: relative;
+
+    }
+
+    .btn1{
+        width: 100px;
+        height: 50px;
+        position: relative;
+        left: 1270px;
+        bottom: 420px;
+        border-radius: 10%;
+
+    }
+
+    .pni{
+        margin-bottom: 10px;
+    }
+
 
 </style>
 <body>
@@ -64,45 +195,58 @@
         </ul>
     </nav>
 
-    <main id="main1">
-        <h2>Hello  I’m </h2>
-        <h1>Ashen Nuwantha</h1>
-        <h3>A Passionate Software_Engineer</h3>
+    <main id="main1" >
+        <div>
+            <h2 id="h1">Hello  I’m </h2>
+            <h1 id="h2">Ashen</h1>
+            <h1 id="h3">Nuwantha</h1>
+            <h3 id="h4">A Passionate Software_Engineer</h3>
+        </div>
+        <section>
+            <img id="img1" src="src/assets/img/WhatsApp Image 2024-07-24 at 1.17.46 AM-Photoroom.png" height="680" width="560"/>
+            <div id="icons">
+                <img id="img2" src="src/assets/icon/icons8-facebook-50.png" height="50" width="50"/>
+                <img id="img3" src="src/assets/icon/icons8-instagram-50.png" height="50" width="50"/>
+                <img id="img4" src="src/assets/icon/icons8-whatsapp-50.png" height="50" width="50"/>
+            </div>
+        </section>
     </main>
-    <img id="img1" src="src/assets/img/WhatsApp Image 2024-07-24 at 1.17.46 AM-Photoroom.png" height="680" width="560"/>
 
-    <img src="src/assets/icon/icons8-facebook-50.png" height="50" width="50"/>
-    <img src="src/assets/icon/icons8-instagram-50.png" height="50" width="50"/>
-    <img src="src/assets/icon/icons8-whatsapp-50.png" height="50" width="50"/>
 
 </header>
 
-<main>
-    <h1>ABOUT ME</h1>
+<main id="main2">
+    <section id="mainSec">
+        <h1 class="about">ABOUT ME</h1>
 
-    <img src="src/assets/img/WhatsApp Image 2024-07-23 at 8.06.29 PM.jpeg" height="1280" width="960"/>
-
-    <section>
-        <div>
         <p>I am an undergraduate student in Software Engineering at the highly recommended IJSE institute. With skills in both front-end and back-end technologies, I specialize in creating web and mobile applications. Proficient in HTML, CSS, JavaScript frameworks like React and Angular, as well as back-end technologies such as Node.js, Express, and SQL/NoSQL databases, I deliver comprehensive solutions. As a quick learner, I constantly seek opportunities to enhance my knowledge and am committed to providing exceptional service as a developer.</p>
-        </div>
 
-        <div>
-            <label for="name">Name</label>
-            <p id="name">Ashen Nuwantha</p>
+
+        <img id="img5" src="src/assets/img/WhatsApp Image 2024-07-23 at 8.06.29 PM.jpeg" height="1280" width="960"/>
+
+        <section class="l12">
+
+            <label id="l1" for="name">Name</label>
+            <p class="pni" id="name">Ashen Nuwantha</p>
 
             <label for="age">Age</label>
-            <p id="age">21 Years</p>
+            <p class="pni" id="age">21 Years</p>
+        </section>
 
+        <section class="l34">
             <label for="phone">Phone</label>
-            <p id="phone">+94787927896</p>
+            <p class="pni" id="phone">+94787927896</p>
 
             <label for="email">Email</label>
-            <p id="email">ashen.nuwantha2003@gmail.com</p>
+            <p class="pni" id="email">ashen.nuwantha2003@gmail.com</p>
 
-            <button type="button" title="Download now">Download CV</button>
-        </div>
+        </section>
+
+        <button class="btn1" type="button" title="Download now">Download CV</button>
+
     </section>
+
+
 </main>
 
 <main>
@@ -237,7 +381,10 @@
 
 </main>
 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>
