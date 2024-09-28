@@ -210,21 +210,18 @@
     @media all and (max-width: 500px){
 
     }
-
+/*---------------------Education-------------------*/
 #main3{
-
     width: 100vw;
     height: 100vh;
     background: dimgray;
-    position: relative;
-}
 
+}
 #main3>#mainSec2>#img6{
     width: 400px;
     height: 300px;
     border-radius: 10%;
 }
-
 #main3>#mainSec2>#img7{
     width: 180px;
     height: 190px;
@@ -235,12 +232,17 @@
     height: 200px;
     border-radius: 10%;
 }
-#main3>#mainSec2>#img9{
+#main3>section>#imgSec>#img9{
     width: 100px;
     height: 100px;
     border-radius: 60%;
 }
-#main3>#mainSec2>#img10{
+#main3>section>#imgSec>#img10{
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+}
+    #main3>section>#imgSec>#img11{
     width: 100px;
     height: 100px;
     border-radius: 60%;
@@ -250,13 +252,14 @@
     font-size: 30px;
     position: relative;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 #main3>h2{
     position: relative;
     left: 80px;
     color: chartreuse;
     font-size: 19px;
+    margin-top: 10px;
 }
 #main3>section>p{
     font-size: 17px;
@@ -268,20 +271,438 @@
 }
 #main3>#mainSec2>#img6{
     position: relative;
-    top: 50px;
+    top: 10px;
     left: 80px;
 }
 #main3>#mainSec2>#img7{
     position: relative;
-    top: 150px;
+    top: 100px;
     left: 150px;
 }
 #main3>#mainSec2>#img8{
     position: relative;
-    top: 50px;
+    top: 10px;
     left: 250px;
 }
+    #main3>#mainSec2>#img12{
+    position: relative;
+    bottom: 170px;
+    right: 200px;
+}
+#main3>#mainSec2>#imgSec{
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    left: 1300px;
+    bottom: 500px;
 
+
+}
+#main3>section>ul>ol{
+    position: relative;
+    font-size: 29px;
+    color: white;
+    bottom: 100px;
+    left: 800px;
+    list-style: none;
+}
+#main3>section>ul>ol>li{
+    margin-top: 20px;
+}
+
+/*---------------------MY-Skill---------------------*/
+#main4{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+
+}
+    #main4>h1{
+        color: lime;
+        position: relative;
+        font-size: 28px;
+        left: 50px;
+        top: 10px;
+        margin-top: 20px;
+}
+    #main4>h2{
+        color: black;
+        font-size: 24px;
+        width: 150px;
+        position: relative;
+        left: 120px;
+        top: 20px;
+    }
+    #main4>section>p{
+        width: 300px;
+        font-size: 18px;
+        position: relative;
+        left: 140px;
+        top: 130px;
+        color: black;
+    }
+    .desing>ul>ol>li{
+        color: black;
+        position: relative;
+        left: 800px;
+        list-style: none;
+        display: grid;
+        grid-template-rows: 1fr;
+
+    }
+
+/*------------------------assinment------------------------*/
+
+    #main5{
+        height: 100vh;
+        width: 100vw;
+        background: dimgray;
+    }
+    #main5>h1{
+        position: relative;
+        color: white;
+        left: 650px;
+        top: 20px;
+    }
+    #main5>#pa1{
+        color: white;
+        width: 400px;
+        font-size: 20px;
+        position: relative;
+        left: 800px;
+        top: 100px;
+    }
+    #main5>#pa2{
+        color: white;
+        width: 400px;
+        font-size: 20px;
+        position: relative;
+        left: 800px;
+        top: 200px;
+    }
+
+    #main5>section>#img13{
+        width: 250px;
+        height: 250px;
+        position: relative;
+        bottom: 100px;
+        left: 120px;
+        border-radius: 10%;
+        z-index: 1;
+    }
+    #main5>section>#img14{
+        width: 250px;
+        height: 250px;
+        position: relative;
+        left: 100px;
+        border-radius: 10%;
+        bottom: 100px;
+        z-index: 2;
+    }
+    #main5>section>#arrowkeys{
+
+        width: 250px;
+        height: 250px;
+        position: relative;
+        left: 290px;
+        bottom: 50px;
+    }
+
+/*---------------------------gallary-----------------------------*/
+
+    /* General body styling */
+    #main6 {
+        font-family: Arial, sans-serif;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background: white;
+    }
+
+    /* Gallery section styling */
+    .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 50px;
+    }
+
+    /* Individual image container styling */
+    .image-container {
+        width: 300px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    /* Image styling */
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Hover effect on image container */
+    .image-container:hover {
+        transform: scale(1.05);
+    }
+
+    /* Caption below the gallery */
+    .caption {
+        max-width: 800px;
+        margin: 20px auto;
+        font-size: 16px;
+        line-height: 1.6;
+        color: dimgray;
+    }
+
+    #main6>h1 {
+        color: lime;
+        font-size: 36px;
+        margin-top: 20px;
+
+    }
+    /*---------------------------project--------------------------*/
+
+    #main7 {
+        font-family: 'Arial', sans-serif;
+        width: 100vw;
+        height: 100vh;
+        background: dimgray;
+    }
+
+    #main7>h1 {
+        position: relative;
+        left: 600px;
+        color: lime;
+        font-size: 36px;
+        top: 30px;
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .project-gallery {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 50px;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .project-card1 {
+        position: relative;
+        bottom: 60px;
+        right: 100px;
+        background-color: #f9f9f9;
+        color: #333;
+        width: 280px;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        overflow: hidden;
+    }
+
+    .project-card2{
+        position: relative;
+        bottom: 100px;
+        background-color: #f9f9f9;
+        color: #333;
+        width: 280px;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        overflow: hidden;
+    }
+
+    .project-card1:hover {
+        transform: translateY(-10px);
+    }
+
+    .project-card2:hover {
+        transform: translateY(-10px);
+    }
+
+    .project-card1 img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .project-title {
+        font-size: 18px;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+    .description {
+        position: relative;
+        bottom: 60px;
+        right: 100px;
+        background-color: transparent;
+        max-width: 400px;
+        color: white;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: left;
+        margin: 0 20px;
+        padding: 20px;
+        border: 1px solid lime;
+        border-radius: 10px;
+        min-height: 180px;
+    }
+
+    /*----------------------------contact-me-------------------------*/
+
+    #main8 {
+        font-family: 'Arial', sans-serif;
+        background-color: white; /* Light background similar to the image */
+        width: 100vw;
+        height: 100vh;
+        color: #333;
+    }
+
+    #main8>h1 {
+        position: relative;
+        left: 650px;
+        color: lime;
+        font-size: 32px;
+        top: 20px;
+    }
+
+    .contact-container {
+        position: relative;
+        right: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .contact-details {
+        width: 40%;
+        background-color: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Individual contact info styling */
+    .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    /* Icon container */
+    .icon {
+        width: 50px;
+        height: 50px;
+        background-color: #a6d4a5;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        margin-right: 15px;
+    }
+
+    /* Text styling in the contact info */
+    .contact-info h3 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .contact-info p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        color: #555;
+    }
+
+    /* Right column (form) styling */
+    .contact-form {
+        position: relative;
+        left: 80px;
+        width: 50%;
+        background-color: #f5f5f5;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Input and textarea styling */
+    .contact-form input,
+    .contact-form textarea {
+        width: 48%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        background-color: #fff;
+        outline: none;
+        color: #333;
+    }
+
+    /* Full-width styling for textarea */
+    .contact-form textarea {
+        width: 100%;
+        height: 100px;
+        resize: none;
+    }
+
+    /* Styling for form buttons */
+    .contact-form button {
+        width: 100px;
+        padding: 10px;
+        margin: 10px 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ccc;
+        font-size: 14px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    .contact-form button:hover {
+        background-color: #4caf50;
+        color: #fff;
+    }
+
+    /* Follow me section styling */
+    .follow-me {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .social-icons img:hover {
+        transform: scale(1.1);
+    }
 
 </style>
 <body>
@@ -386,13 +807,18 @@
         <img id="img6" src="src/assets/img/child-865116_640.jpg" height="427" width="640"/>
         <img id="img7" src="src/assets/img/books-2596809_640.jpg" height="592" width="640"/>
         <img id="img8" src="src/assets/img/glasses-4704055_640.jpg" height="427" width="640"/>
-        <img id="img9" src="src/assets/img/channels4_profile.jpg" height="900" width="900"/>
-        <img id="img10" src="src/assets/img/Untitled.jpeg" height="225" width="225"/>
+        <img id="img12" src="src/assets/img/icons8-education-50.png" height="50" width="50"/>
+
+        <section id="imgSec">
+            <img id="img11" src="src/assets/img/images.jpg" height="226" width="223"/>
+            <img id="img9" src="src/assets/img/channels4_profile.jpg" height="900" width="900"/>
+           <img id="img10" src="src/assets/img/Untitled.jpeg" height="225" width="225"/>
+       </section>
 
     </section>
 </main>
 
-<main>
+<main id="main4">
     <h1>MY SKILLS</h1>
     <h2>Growing Over Times</h2>
 
@@ -400,102 +826,132 @@
         <p>A "skill" refers to the ability to perform a task or activity with a certain level of proficiency. Skills can be developed and improved through practice, training, and experience.</p>
     </section>
 
-    <ul>
-        <ol>
-            <li>UX/UI Desing 80%</li>
-            <li>Desktop Application Development 60%</li>
-            <li>Grapic desing 75%</li>
-            <li>Web development 63%</li>
-            <li>Socal  media management 90%</li>
-        </ol>
-    </ul>
+    <section class="desing">
+        <ul>
+            <ol>
+                <li>UX/UI Desing 80%</li>
+                <li>Desktop Application Development 60%</li>
+                <li>Grapic desing 75%</li>
+                <li>Web development 63%</li>
+                <li>Socal  media management 90%</li>
+            </ol>
+        </ul>
+    </section>
+
 </main>
 
-<main>
+<main id="main5">
     <h1>ASSIGNMENT</h1>
+
+    <p id="pa1">An "assignment" in software engineering refers to a task or project given to students or professionals to apply their knowledge and skills in developing software solutions.</p>
+
+    <p id="pa2">These assignments can vary in complexity and typically involve designing, coding, testing, and documenting software applications or components.</p>
+
+
         <section>
-            <img src="src/assets/img/8151789_orig.webp" height="270" width="384"/>
-            <img src="src/assets/img/Charrette-COVID-cover-793x1024.png" height="1024" width="793"/>
+                <img id="img13" src="src/assets/img/8151789_orig.webp" height="270" width="384"/>
+                <img id="img14" src="src/assets/img/Charrette-COVID-cover-793x1024.png" height="1024" width="793"/>
 
-            <img src="src/assets/icon/icons8-more-50.png" height="50" width="50"/>
-            <img src="src/assets/icon/icons8-right-arrow-50.png" height="50" width="50"/>
+               <section id="arrowkeys">
 
-            <p>An "assignment" in software engineering refers to a task or project given to students or professionals to apply their knowledge and skills in developing software solutions.
+                   <img src="src/assets/img/icons8-back-50.png" height="50" width="50"/>
+                   <img src="src/assets/icon/icons8-more-50.png" height="50" width="50"/>
+                   <img src="src/assets/icon/icons8-right-arrow-50.png" height="50" width="50"/>
 
-                These assignments can vary in complexity and typically involve designing, coding, testing, and documenting software applications or components.</p>
+               </section>
+
         </section>
 </main>
 
-<main>
+<main id="main6">
+
     <h1>GALLERY</h1>
-    <section>
 
-        <img src="src/assets/img/WhatsApp Image 2024-08-08 at 22.01.20.jpeg" height="1097" width="828"/>
-        <img src="src/assets/img/WhatsApp Image 2024-08-08 at 22.03.19.jpeg" height="1190" width="828"/>
-        <img src="src/assets/img/WhatsApp Image 2024-07-24 at 1.17.46 AM.jpeg" height="1600" width="1200"/>
+    <div class="gallery">
 
+        <div class="image-container">
+            <img src="src/assets/img/WhatsApp Image 2024-08-08 at 22.01.20.jpeg" height="1097" width="828"/>
+        </div>
+        <div class="image-container">
+            <img src="src/assets/img/WhatsApp Image 2024-08-08 at 22.03.19.jpeg" height="1190" width="828"/>
+        </div>
+        <div class="image-container">
+            <img src="src/assets/img/WhatsApp Image 2024-07-24 at 1.17.46 AM.jpeg" height="1600" width="1200"/>
+        </div>
+    </div>
+    <div class="caption">
         <p>A photo gallery is a collection of images organized and displayed together, often on a website, app, or in a physical space like a museum or photo album. In digital form, it allows users to browse through photos, view them in larger sizes, and sometimes interact with them by liking, sharing, or commenting. The photos in a gallery are usually arranged in grids or slideshows, making it easy to navigate and enjoy the visual content.</p>
-    </section>
+    </div>
+
 </main>
 
-<main>
+<main id="main7">
+
     <h1>Project</h1>
 
-    <section>
+    <div class="project-gallery">
+        <div class="project-card1">
+            <img src="src/assets/img/Untitled2.jpeg" height="220" width="229"/>
+            <div class="project-title">MVC Final Project</div>
+        </div>
+        <div class="description">
+            The project "SE" typically refers to "Software Engineering." It involves the application of engineering principles to the design, development, maintenance, testing, and evaluation of software and systems.
+        </div>
+        <div class="project-card2">
+            <img src="src/assets/img/Untitled2.jpeg" height="220" width="229"/>
+            <div class="project-title">Layered Final Project</div>
+        </div>
+    </div>
 
-        <img src="src/assets/img/Untitled2.jpeg" height="220" width="229"/>
-        <p>The project "SE" typically refers to "Software Engineering." It involves the application of engineering principles to the design, development, maintenance, testing, and evaluation of software and systems.</p>
-        <img src="src/assets/img/Untitled3.png" height="178" width="283"/>
-
-    </section>
 </main>
 
-<main>
+<main id="main8">
     <h1>Contact Me</h1>
-
-    <section>
-<div>
-        <img src="src/assets/icon/icons8-call-50(1).png" height="50" width="50"/>
-        <h4>Let’s talk
-
-            0787927896
-            0769206977</h4>
-</div>
-        <div>
-
-        <img src="src/assets/icon/icons8-mail-50.png" height="50" width="50"/>
-        <h4>Send Email
-
-            ashen.nuwanth2003@gmail.com</h4>
+    <div class="contact-container">
+        <div class="contact-details">
+            <div class="contact-info">
+                <div class="icon">📞</div>
+                <div>
+                    <h3>Let's talk</h3>
+                    <p>0787927896</p>
+                    <p>0769206977</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="icon">📧</div>
+                <div>
+                    <h3>Send Email</h3>
+                    <p>ashen.nuwanth2003@gmail.com</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="icon">📍</div>
+                <div>
+                    <h3>Location</h3>
+                    <p>Morahenagama, Hatton</p>
+                </div>
+            </div>
         </div>
-
-        <div>
-
-        <img src="src/assets/icon/icons8-address-50.png" height="50" width="50"/>
-        <h4>Morahenagama,Hatton</h4>
-
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <input type="tel" placeholder="Your Phone">
+            <input type="text" placeholder="Your Subject">
+            <textarea placeholder="Start writing message here!"></textarea>
+            <div>
+                <button type="submit">submit</button>
+                <button type="reset">reset</button>
+            </div>
         </div>
-
-        <div>
-            <input type="text" placeholder="Your name" name="name" ><br><br>
-            <input type="text" placeholder="Your email" name="email"><br><br>
-            <input type="text" placeholder="Your email" name="email"><br><br>
-            <input type="text" placeholder="Phone" name="phone"><br><br>
-            <textarea placeholder="Start writing message here !"></textarea><br><br>
-            <input type="submit">
-            <input type="reset">
+    </div>
+    <div class="follow-me">
+        Follow me
+        <div class="social-icons">
+            <img src="src/assets/img/icons8-facebook-50.png" height="50" width="50"/>
+            <img src="src/assets/img/icons8-whatsapp-50.png" height="50" width="50"/>
+            <img src="src/assets/img/icons8-instagram-50.png" height="50" width="50"/>
         </div>
-
-        <div>
-            <h5>Follow me</h5>
-            <img src="src/assets/icon/facebook(1).png" height="512" width="512"/>
-            <img src="src/assets/icon/icons8-whatsapp-48.png" height="48" width="48"/>
-            <img src="src/assets/icon/instagram(1).png" height="512" width="512"/>
-
-        </div>
-
-    </section>
-
+    </div>
 </main>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
