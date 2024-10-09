@@ -58,7 +58,6 @@
         display:flex;
         justify-content: center;
         align-items: center;
-        /*margin-top: 500px;*/
     }
     header>#main1>div>#h3{
 
@@ -99,13 +98,19 @@
     #icons{
         display: grid;
         grid-template-columns: 1fr;
+        margin: 20px;
         position: absolute;
         right: 60px;
         bottom: 250px;
     }
+    #icons>img{
+        margin: 3px;
+    }
 
 /*--------------about------------*/
-
+#main2{
+    background: #f0f4f8;
+}
     #main2>#mainSec{
         display: flex;
         justify-content: center;
@@ -248,18 +253,18 @@
     border-radius: 60%;
 }
 #main3>h1{
-    color: white;
+    color: #f0f4f8;
     font-size: 30px;
     position: relative;
-    margin-left: 20px;
-    margin-top: 30px;
+    left: 20px;
+    top: 20px;
 }
 #main3>h2{
     position: relative;
     left: 80px;
     color: chartreuse;
-    font-size: 19px;
-    margin-top: 10px;
+    font-size: 24px;
+    top: 20px;
 }
 #main3>section>p{
     font-size: 17px;
@@ -311,44 +316,106 @@
 }
 
 /*---------------------MY-Skill---------------------*/
-#main4{
-    width: 100vw;
-    height: 100vh;
-    color: white;
+    #main4 {
+        background-color: #f0f4f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 
-}
-    #main4>h1{
-        color: lime;
+    .container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .text-section {
+        margin-right: 50px;
+        max-width: 300px;
+    }
+
+    .text-section h1 {
+        color: limegreen;
         position: relative;
-        font-size: 28px;
-        left: 50px;
-        top: 10px;
-        margin-top: 20px;
-}
-    #main4>h2{
-        color: black;
+        font-size: 26px;
+        bottom: 100px;
+        right: 100px;
+    }
+
+    .text-section h2 {
         font-size: 24px;
-        width: 150px;
+        font-weight: bold;
         position: relative;
-        left: 120px;
-        top: 20px;
-    }
-    #main4>section>p{
-        width: 300px;
-        font-size: 18px;
-        position: relative;
-        left: 140px;
-        top: 130px;
-        color: black;
-    }
-    .desing>ul>ol>li{
-        color: black;
-        position: relative;
-        left: 800px;
-        list-style: none;
-        display: grid;
-        grid-template-rows: 1fr;
+        bottom: 90px;
+        right: 70px;
 
+    }
+
+    .text-section p {
+        font-size: 20px;
+        color: #333;
+        position: relative;
+        bottom: 50px;
+        width: 350px;
+
+    }
+
+    .skills-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .skill {
+        text-align: center;
+        width: 130px;
+    }
+
+    .skill p {
+        position: relative;
+        left: 100px;
+        margin-top: 10px;
+        font-size: 16px;
+
+    }
+
+    .circle {
+        left: 100px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: conic-gradient(limegreen calc(var(--percent) * 1%), #ddd calc(var(--percent) * 1%));
+        position: relative;
+    }
+
+    .circle::before {
+        content: attr(data-percent) '%';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .circle[data-percent="80"] {
+        --percent: 80;
+    }
+
+    .circle[data-percent="60"] {
+        --percent: 60;
+    }
+
+    .circle[data-percent="75"] {
+        --percent: 75;
+    }
+
+    .circle[data-percent="63"] {
+        --percent: 63;
+    }
+
+    .circle[data-percent="90"] {
+        --percent: 90;
     }
 
 /*------------------------assinment------------------------*/
@@ -410,7 +477,6 @@
 
 /*---------------------------gallary-----------------------------*/
 
-    /* General body styling */
     #main6 {
         font-family: Arial, sans-serif;
         width: 100vw;
@@ -418,10 +484,9 @@
         margin: 0;
         padding: 0;
         text-align: center;
-        background: white;
+        background: #f0f4f8;
     }
 
-    /* Gallery section styling */
     .gallery {
         display: flex;
         justify-content: center;
@@ -429,7 +494,6 @@
         padding: 50px;
     }
 
-    /* Individual image container styling */
     .image-container {
         width: 300px;
         border-radius: 15px;
@@ -438,19 +502,16 @@
         transition: transform 0.3s ease;
     }
 
-    /* Image styling */
     .image-container img {
         width: 100%;
         height: auto;
         display: block;
     }
 
-    /* Hover effect on image container */
     .image-container:hover {
         transform: scale(1.05);
     }
 
-    /* Caption below the gallery */
     .caption {
         max-width: 800px;
         margin: 20px auto;
@@ -566,7 +627,7 @@
 
     #main8 {
         font-family: 'Arial', sans-serif;
-        background-color: white; /* Light background similar to the image */
+        background-color: #f0f4f8;
         width: 100vw;
         height: 100vh;
         color: #333;
@@ -599,14 +660,13 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    /* Individual contact info styling */
+
     .contact-info {
         display: flex;
         align-items: center;
         margin-bottom: 30px;
     }
 
-    /* Icon container */
     .icon {
         width: 50px;
         height: 50px;
@@ -619,7 +679,6 @@
         margin-right: 15px;
     }
 
-    /* Text styling in the contact info */
     .contact-info h3 {
         font-size: 18px;
         margin: 0;
@@ -631,7 +690,6 @@
         color: #555;
     }
 
-    /* Right column (form) styling */
     .contact-form {
         position: relative;
         left: 80px;
@@ -642,7 +700,6 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    /* Input and textarea styling */
     .contact-form input,
     .contact-form textarea {
         width: 48%;
@@ -656,14 +713,12 @@
         color: #333;
     }
 
-    /* Full-width styling for textarea */
     .contact-form textarea {
         width: 100%;
         height: 100px;
         resize: none;
     }
 
-    /* Styling for form buttons */
     .contact-form button {
         width: 100px;
         padding: 10px;
@@ -681,7 +736,6 @@
         color: #fff;
     }
 
-    /* Follow me section styling */
     .follow-me {
         text-align: center;
         margin-top: 20px;
@@ -819,23 +873,38 @@
 </main>
 
 <main id="main4">
-    <h1>MY SKILLS</h1>
-    <h2>Growing Over Times</h2>
+    <div class="container">
+        <div class="text-section">
+            <h1>MY SKILL</h1>
+            <h2>Growing Over Times</h2>
+            <p>
+                A "skill" refers to the ability to perform a task or activity with a certain level of proficiency. Skills can be developed and improved through practice, training, and experience.
+            </p>
+        </div>
 
-    <section>
-        <p>A "skill" refers to the ability to perform a task or activity with a certain level of proficiency. Skills can be developed and improved through practice, training, and experience.</p>
-    </section>
-
-    <section class="desing">
-        <ul>
-            <ol>
-                <li>UX/UI Desing 80%</li>
-                <li>Desktop Application Development 60%</li>
-                <li>Grapic desing 75%</li>
-                <li>Web development 63%</li>
-                <li>Socal  media management 90%</li>
-            </ol>
-        </ul>
+        <div class="skills-section">
+            <div class="skill">
+                <div class="circle" data-percent="80"></div>
+                <p>UX/UI Design</p>
+            </div>
+            <div class="skill">
+                <div class="circle" data-percent="60"></div>
+                <p>Desktop Application Development</p>
+            </div>
+            <div class="skill">
+                <div class="circle" data-percent="75"></div>
+                <p>Graphic Design</p>
+            </div>
+            <div class="skill">
+                <div class="circle" data-percent="63"></div>
+                <p>Web Development</p>
+            </div>
+            <div class="skill">
+                <div class="circle" data-percent="90"></div>
+                <p>Social Media Management</p>
+            </div>
+        </div>
+    </div>
     </section>
 
 </main>
