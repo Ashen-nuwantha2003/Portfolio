@@ -3,6 +3,7 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-portfolio</title>
     <link
             rel="stylesheet"
@@ -19,10 +20,10 @@
         overflow-x: hidden;
     }
     header{
-        background: dimgray;
+        background: linear-gradient(to right, #442e2e, #2e2e44);
         width: 100vw;
         height: 100vh;
-        position: relative;
+
     }
 
     header>nav>ul{
@@ -30,13 +31,35 @@
         display: flex;
         right: 0;
         margin-right: 30px;
-        list-style: none;
         font-size: 18px;
+        animation: slideTop .5s ease forwards;
+        animation-delay: calc(.2s * var(--i));
+    }
+    header>nav>ul>li{
+        list-style: none;
+        padding: 10px;
+    }
+    header>nav>ul>li:hover{
+        background: #4caf50;
+    }
+    .navbar>ul>li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    @keyframes slideTop {
+        0%{
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 
     header>nav>ul>li{
-        margin-top: 10px;
-        margin-right: 20px;
+
         color: white;
     }
 
@@ -46,13 +69,26 @@
     header>#main1>div>#h1{
         font-size: 28px;
         color: white;
-
+        animation: slideBottom 1s ease forwards;
+        animation-delay: .7s;
     }
+    @keyframes slideBottom {
+        0%{
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
     header>#main1>div>#h2{
         left: 180px;
         font-size: 58px;
         color: white;
-
+        animation: slideRight 1s ease forwards;
+        animation-delay: .5s;
     }
     header>#main1{
         display:flex;
@@ -60,15 +96,34 @@
         align-items: center;
     }
     header>#main1>div>#h3{
-
         left: 230px;
         font-size: 58px;
         color: white;
-
+        animation: slideRight 1s ease forwards;
+    }
+    @keyframes slideRight {
+        0%{
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
     header>#main1>div>#h4{
         font-size: 25px;
         color: greenyellow;
+        animation: slideBottom 1s ease forwards;
+        animation-delay: .7s;
+    }
+    header>#main1>div>p{
+        position: relative;
+        width: 500px;
+        font-size: 18px;
+        color: white;
+        top: 30px;
+        animation: slideBottom 1s ease forwards;
 
     }
 
@@ -102,6 +157,20 @@
         position: absolute;
         right: 60px;
         bottom: 250px;
+    }
+    #icons>a{
+        animation: slideLeft .2s ease forwards;
+        animation-delay: calc(.2s * var(--i));
+    }
+    @keyframes slideLeft {
+        0%{
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
     #icons>img{
         margin: 3px;
@@ -212,14 +281,12 @@
     .pni{
         margin-bottom: 30px;
     }
-    @media all and (max-width: 500px){
 
-    }
-/*---------------------Education-------------------*/
+    /*---------------------Education-------------------*/
 #main3{
     width: 100vw;
     height: 100vh;
-    background: dimgray;
+    background: linear-gradient(to right, #442e2e, #2e2e44);
 
 }
 #main3>#mainSec2>#img6{
@@ -423,7 +490,7 @@
     #main5{
         height: 100vh;
         width: 100vw;
-        background: dimgray;
+        background: linear-gradient(to right, #442e2e, #2e2e44);
     }
     #main5>h1{
         position: relative;
@@ -532,7 +599,7 @@
         font-family: 'Arial', sans-serif;
         width: 100vw;
         height: 100vh;
-        background: dimgray;
+        background: linear-gradient(to right, #442e2e, #2e2e44);
     }
 
     #main7>h1 {
@@ -758,19 +825,20 @@
         transform: scale(1.1);
     }
 
+
 </style>
 <body>
 
 <header>
-    <nav>
+    <nav class="navbar">
         <ul>
-            <li>Home</li>
-            <li>About me</li>
-            <li>Education</li>
-            <li>My Skills</li>
-            <li>Assignment</li>
-            <li>Gallery</li>
-            <li>Contact</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">My Skills</a></li>
+            <li><a href="#">Assignment</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
@@ -779,14 +847,17 @@
             <h2 id="h1">Hello  I’m </h2>
             <h1 id="h2">Ashen</h1>
             <h1 id="h3">Nuwantha</h1>
-            <h3 id="h4">A Passionate Software_Engineer</h3>
+            <h3 class="multiple-text" id="h4"></h3>
+            <p>This is my portfolio already done in IJSE institute and my first one.I also use HTML,CSS and java Script. </p>
         </div>
         <section>
             <img id="img1" src="src/assets/img/WhatsApp Image 2024-07-24 at 1.17.46 AM-Photoroom.png" height="680" width="560"/>
             <div id="icons">
-                <img id="img2" src="src/assets/icon/icons8-facebook-50.png" height="50" width="50"/>
-                <img id="img3" src="src/assets/icon/icons8-instagram-50.png" height="50" width="50"/>
-                <img id="img4" src="src/assets/icon/icons8-whatsapp-50.png" height="50" width="50"/>
+
+                <a href="#" style="--i:8;"><img src="src/assets/icon/icons8-facebook-50.png" height="50" width="50"/></a>
+                <a href="#" style="--i:9;"><img src="src/assets/icon/icons8-instagram-50.png" height="50" width="50"/></a>
+                <a href="#" style="--i:10;"><img src="src/assets/icon/icons8-whatsapp-50.png" height="50" width="50"/></a>
+
             </div>
         </section>
     </main>
@@ -1028,5 +1099,7 @@
     AOS.init();
 </script>
 
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="src/test/script.js"></script>
 </body>
 </html>
